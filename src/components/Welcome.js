@@ -1,10 +1,15 @@
 import React, {Component} from "react";
+import './Welcome.css';
+
+
 
 class Welcome extends Component{
 
   render(){
     return (
-      "Check"
+      <p className='mt5 shadow-1 grow bggradient pa2'>
+        Welcome!
+      </p>
     );
   }
 }
