@@ -4,17 +4,6 @@ import Particles from 'react-particles-js';
 import Welcome from "../components/Welcome.js";
 import Tachyons from 'tachyons';
 
-const particleParams={
-  particles: {
-      number: {
-        value: 200,
-        density: {
-          enable: true,
-          value_area: 800
-        }
-      }
-    }
-  }
 class App extends Component{
 
   constructor(){
@@ -29,10 +18,6 @@ class App extends Component{
     if(this.state.route == "welcome"){
       return (
         <div className="App center">
-        <Particles
-                className='particles'
-                params={particleParams}
-                />
           <Welcome />
          </div>
       );
